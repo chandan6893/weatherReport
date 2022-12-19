@@ -1,12 +1,11 @@
 const form = document.querySelector(".form");
 const inputSearch = document.querySelector("#inputSearch");
-const weatherReport = document.querySelector(".weatherReport");
 const parent = document.querySelector(".parent");
 const button=document.querySelector(".btn");
 
 button.addEventListener("click", function (e) {
   e.preventDefault();
-  console.log(inputSearch.value)
+  // console.log(inputSearch.value)
   getWeather(inputSearch.value);
   inputSearch.value="";
 });
